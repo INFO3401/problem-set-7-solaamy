@@ -1,0 +1,56 @@
+read.csv(file="titanic.csv", head=TRUE, sep=",")
+summary(sex)
+summary(Sex)
+summary("Sex")
+summary("Age")
+read.csv(file="titanic.csv", head=TRUE, sep=",")#
+summary("Sex")
+read.csv(file="titanic.csv", head=TRUE, sep=",")#
+summary(Sex)
+data <- read.csv(file="titanic.csv", head=TRUE, sep=",")#
+summary(data)\
+data <- read.csv(file="titanic.csv", head=TRUE, sep=",")#
+summary(data)
+data <- read.csv(file="titanic.csv", head=TRUE, sep=",")#
+print(data)#
+summary(data)
+name("sex")
+data <- read.csv(file="titanic.csv", head=TRUE, sep=",")
+name("sex")
+name("male")
+names("male")
+data <- read.csv(file="titanic.csv", head=TRUE, sep=",")#
+names("male")
+data <- read.csv(file="titanic.csv", head=TRUE, sep=",")#
+names("sex")
+data <- read.csv(file="titanic.csv", head=TRUE, sep=",")#
+print(data)
+data <- read.csv(file="titanic.csv", head=TRUE, sep=",")#
+names("Sex")
+names(Sex)
+data <- read.csv(file="titanic.csv", head=TRUE, sep=",")#
+names(Sex)
+data <- read.csv(file="titanic.csv", head=TRUE, sep=",")#
+names(data)
+data$Sex
+table(data$Sex)
+data$PassengerId#
+data$Survived
+table(data$Sex)
+table1 <- table(data$Sex)#
+prop.table(table1)
+table(data$Sex, data$Survived)
+prop.table(table(data$Sex))#
+prop.table(table(data$Sex, data$Survived))
+prop.table(table(data$Sex, data$Survived), 1)#
+prop.table(table(data$Sex, data$Survived), 2)
+data$IsChild <- 0#
+data$IsChild[data$Age < 18] <- 1#
+data$IsChild
+aggregate(Survived ~ Sex + IsChild, data=data, FUN=length)
+aggregate(Survived ~ Sex + IsChild, data=data, FUN=sum)
+table(data$Sex, data$Survived)
+aggregate(Survived ~ Sex + IsChild, data=data, FUN=length)#
+aggregate(Survived ~ Sex + IsChild, data=data, FUN=sum)#
+table(data$Sex)#
+table(data$Sex, data$Survived)
