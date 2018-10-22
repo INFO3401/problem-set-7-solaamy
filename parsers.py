@@ -179,7 +179,7 @@ def searchCSV(csvfile, word):
                 filename = row[0]
     csv_file.close()
     return filename
-file_name = searchCSV("./targetfile.csv", "than")
+#file_name = searchCSV("./targetfile.csv", "than")
 #print(file_name)
 
 def searchJSON(JSONfile, word): 
@@ -200,7 +200,7 @@ def searchJSON(JSONfile, word):
         return filename_injoson
 # Test your part 6 code to find which file has the highest count of a given word
 #searchJSON("./targetfile.json", "than")
-file_json = searchJSON("./targetfile.json", "than")
+#file_json = searchJSON("./targetfile.json", "than")
 #print(file_json)
 # +1 bonus point for figuring out how many datapoints you had to process to 
 # compute this value
@@ -226,12 +226,16 @@ file_json = searchJSON("./targetfile.json", "than")
 #
     #Problem 3
 import sqlite3
+def createDatabase(database):
+    conn = sqlite3.connect(database)
 
-conn = sqlite3.connect('presidents.db')
+    c = conn.cursor()
 
-c = conn.cursor()
+    c.execute('''CREATE TABLE president_info(number integer, start_date text, end_date text, president_name text, prior_position text, party text, vice_president text)''')
+    c.execute('''CREATE TABLE wordCounts_info(filename text, words text, counts integer)''')
+    conn.commit()
 
-c.execute('''CREATE TABLE presidents_data(start_date text, end_date text, president_name text, prior_position text, party text, vice_president text, words text, counts integer, year integer)''')
-conn.commit()
-
-conn.close()
+    conn.close()
+    return 0
+# Test your code 
+#createDatabase('presidents.db')
