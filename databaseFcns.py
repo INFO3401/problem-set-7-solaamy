@@ -86,7 +86,7 @@ def computeLengthByParty(databaseName):
     sum_fileWCounts = c.fetchall()
     print(sum_fileWCounts)
     ######
-    #Not finish, stuck here
+    #stuck here
     #I guess we might need to create a third table in database including presidents name, filename of the speech, party then use left join method to combine the tables?????
     #Tricky >^<
     ######
